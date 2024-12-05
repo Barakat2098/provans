@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прованс-Уфа</title>
+    <link rel="stylesheet" href="css/style-main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <div class="header-main">
+            <div class="header-logo">
+                <img src="img/logo.png" alt="Логотип">
+            </div>
+            <nav class="header-txt">
+                <a href="#">Главная</a>
+                <a href="#">Услуги</a>
+                <a href="#">Ваканции</a>
+                <a href="#">Акция</a>
+                <a href="#">Контакты</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Banner -->
+
+    <section class="banner">
+        <div class="banner-main">
+            <div class="banner-txt">
+                <h1>Прованс</h1>
+                <h2>салон красоты</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- slider -->
+
+    <section class="slider">
+        <div class="slider-main">
+            <div class="slide"><img src="img/ban01.jpg" alt="Slide 1"></div>
+            <div class="slide"><img src="img/ban02.jpg" alt="Slide 2"></div>
+            <div class="slide"><img src="img/ban03.jpg" alt="Slide 3"></div>
+            <div class="slide"><img src="img/ban04.jpg" alt="Slide 4"></div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        <div class="dots">
+            <!-- Динамически добавляем точки -->
+        </div>
+    </section>
+    
+    <!-- Подключаем внешний JS файл -->
+    <script src="js/script.js"></script>
+
+
+    <!-- акции -->
+    
+    <h1>акции</h1>
+    <div class="grid-container">
+        <div class="card" onclick="openModal('modal1')">
+            <img src="img/dlydvoih.jpg" alt="Спа для двоих">
+            <p>Спа для двоих!</p>
+        </div>
+        <div class="card" onclick="openModal('modal2')">
+            <img src="img/gift.jpg" alt="Подарочные сертификаты">
+            <p>Подарочные сертификаты</p>
+        </div>
+        <div class="card" onclick="openModal('modal3')">
+            <img src="img/depil.jpg" alt="Комбинированная чистка лица">
+            <p>Комбинированная чистка лица за 2000 рублей!</p>
+        </div>
+        <div class="card" onclick="openModal('modal1')">
+            <img src="img/dlydvoih.jpg" alt="Спа для двоих">
+            <p>Спа для двоих!</p>
+        </div>
+        <div class="card" onclick="openModal('modal2')">
+            <img src="img/gift.jpg" alt="Подарочные сертификаты">
+            <p>Подарочные сертификаты</p>
+        </div>
+        <div class="card" onclick="openModal('modal3')">
+            <img src="img/depil.jpg" alt="Комбинированная чистка лица">
+            <p>Комбинированная чистка лица за 2000 рублей!</p>
+        </div>
+        <div class="card" onclick="openModal('modal1')">
+            <img src="img/dlydvoih.jpg" alt="Спа для двоих">
+            <p>Спа для двоих!</p>
+        </div>
+        <div class="card" onclick="openModal('modal2')">
+            <img src="img/gift.jpg" alt="Подарочные сертификаты">
+            <p>Подарочные сертификаты</p>
+        </div>
+        <div class="card" onclick="openModal('modal3')">
+            <img src="img/depil.jpg" alt="Комбинированная чистка лица">
+            <p>Комбинированная чистка лица за 2000 рублей!</p>
+        </div>
+    </div>
+
+    <!-- Модальные окна -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Спа для двоих!</h2>
+            <p>Описание услуги: Спа для двоих включает массаж, уход за телом, и другие расслабляющие процедуры.</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Подарочные сертификаты</h2>
+            <p>Описание услуги: Идеальный подарок для друзей и семьи, доступно от 500 рублей.</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Комбинированная чистка лица</h2>
+            <p>Описание услуги: Глубокая чистка лица с использованием профессиональных косметических средств.</p>
+        </div>
+    </div>
+
+    <script src="js/scripts02.js"></script>
+
+    <!--  -->
+
+    <div class="container">
+        <div class="content">
+            <h1>Салон красоты "ПРОВАНС" Уфа</h1>
+            <p>
+                В салоне красоты "ПРОВАНС" высокая квалификация мастеров дополняется косметическими средствами от лучших мировых производителей. Новейшие технологии и современное оборудование позволяют максимально эффективно использовать ваше время.
+            </p>
+            <p>
+                Наши специалисты творят настоящие чудеса. Большой спектр дополнительных услуг поможет расслабиться, а проведенное в салоне время надолго оставит в вашем сердце незабываемые впечатления.
+            </p>
+            <p>
+                По-домашнему доброжелательная обстановка, удобная парковка, чашка душистого чая или кофе, заказ такси — это далеко не полный перечень дополнительных услуг нашего салона.
+            </p>
+        </div>
+        <div class="image">
+            <img src="img/salon.png" alt="Салон красоты ПРОВАНС">
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div class="grid-container">
+        <div class="card" onclick="openModal('modal1')">
+            <img src="img/dlydvoih.jpg" alt="Спа для двоих">
+            <p>Спа для двоих!</p>
+        </div>
+        <div class="card" onclick="openModal('modal2')">
+            <img src="img/gift.jpg" alt="Подарочные сертификаты">
+            <p>Подарочные сертификаты</p>
+        </div>
+        <div class="card" onclick="openModal('modal3')">
+            <img src="img/depil.jpg" alt="Комбинированная чистка лица">
+            <p>Комбинированная чистка лица за 2000 рублей!</p>
+        </div>
+
+        <div class="card" onclick="openModal('modal1')">
+            <img src="img/dlydvoih.jpg" alt="Спа для двоих">
+            <p>Спа для двоих!</p>
+        </div>
+        <div class="card" onclick="openModal('modal2')">
+            <img src="img/gift.jpg" alt="Подарочные сертификаты">
+            <p>Подарочные сертификаты</p>
+        </div>
+        <div class="card" onclick="openModal('modal3')">
+            <img src="img/depil.jpg" alt="Комбинированная чистка лица">
+            <p>Комбинированная чистка лица за 2000 рублей!</p>
+        </div>
+    </div>
+    
+
+    <!-- map -->
+
+    <div class="map-container">
+        <h2>Наше местоположение</h2>
+        <div class="map-wrapper">
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7e3659fd2a8ae6a7800017e2fe61e095848773223f5b4fd242ccee5899ff3f4b&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true">
+            </script>
+        </div>
+    </div>
+
+
+
+     <!--  -->
+
+     <footer class="footer">
+        <div class="footer-section footer-left">
+            <p>Салон красоты "Прованс"</p>
+        </div>
+        <div class="footer-section footer-center">
+            <p>Режим работы: с 10-00 до 21-00, без выходных</p>
+            <p>Телефон салона: +7 (987) 141-27-17</p>
+            <p>Наш адрес: Уфа, ул.Бакалинская, 33</p>
+            <p>Остановка: мкр.Солнечный</p>
+        </div>
+        <div class="footer-section footer-right">
+            <a href="#" class="social-icon"><img src="icons/youtube.svg" alt="YouTube"></a>
+            <a href="#" class="social-icon"><img src="icons/instagram.svg" alt="Instagram"></a>
+            <a href="#" class="social-icon"><img src="icons/tiktok.svg" alt="TikTok"></a>
+        </div>
+    </footer>
+    
+</body>
+</html>
